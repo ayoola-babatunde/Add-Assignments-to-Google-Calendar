@@ -46,7 +46,7 @@ for lists in big_list:
         small_list[big_list.index(lists)].append(output)
 
 
-#opens the link in google calendar 
+#opens the link in google calendar (2019 is the current year) 
 for x in range(len(assignments)): 
     webbrowser.open('https://calendar.google.com/calendar/render?action=TEMPLATE&text='
           + course + ': ' + assignments[x] + '&dates=2019' + release1[x] + '/2019' + submission1[x])
