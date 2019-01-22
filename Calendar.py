@@ -9,6 +9,7 @@ assignments = ['Drug discovery and design challenge ',
         'Genetic Testing and Engineering Challenge(LBA)'
         ]
 
+weights = [8, 8, 9]
 
 #dates of release and submission in same order. [Week 5, Sunday = 51]
 release = [17, 66, 116]
@@ -49,5 +50,5 @@ for lists in big_list:
 #opens the link in google calendar (2019 is the current year) 
 for x in range(len(assignments)): 
     webbrowser.open('https://calendar.google.com/calendar/render?action=TEMPLATE&text='
-          + course + ': ' + assignments[x] + '&dates=2019' + release1[x] + '/2019' + submission1[x])
+          + course + ': ' + assignments[x] + ' ' + str(weights[x]) + 'x' + '&dates=2019' + release1[x] + '/2019' + submission1[x])
     
